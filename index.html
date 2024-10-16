@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title style="margin: 8px;">Editkaro Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Editkaro.in Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="active" onclick="filterVideos('all')">All</a></li>
+                <li><a href="#" onclick="filterVideos('short-form')">Short Form Videos</a></li>
+                <li><a href="#" onclick="filterVideos('long-form')">Long Form Videos</a></li>
+                <li><a href="#" onclick="filterVideos('gaming')">Gaming Videos</a></li>
+                <li><a href="#" onclick="filterVideos('football')">Football Edits</a></li>
+                <li><a href="#" onclick="filterVideos('ecommerce')">eCommerce Ads</a></li>
+                <li><a href="#" onclick="filterVideos('documentary')">Documentary Style</a></li>
+                <li><a href="#" onclick="filterVideos('color-grading')">Color Grading</a></li>
+                <li><a href="#" onclick="filterVideos('anime long form')">Anime Long Form Videos</a></li>
+                <li><a href="#" onclick="filterVideos('ads')">Ads</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="video-gallery">
+        <div class="video-item short-form">
+            <iframe src="https://drive.google.com/file/d/1Oc0P-J0UFW8bO3kgyJ99v6Qth9kCkS7e/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Short Form Video 1</h3>
+        </div>
+        <div class="video-item short-form">
+            <iframe src="https://drive.google.com/file/d/1JFzqJtAM67m52dcsSuQJQI4J3GCGNONc/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Short Form Video 2</h3>
+        </div>
+        <div class="video-item short-form">
+            <iframe src="https://drive.google.com/file/d/1U0ibXya1jmLwoDj1qvnhGfsGOFguAZw-/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Short Form Video 3</h3>
+        </div>
+        <div class="video-item short-form">
+            <iframe src="https://drive.google.com/file/d/124ojD_Mb47nT47jREAGuT4B97F-6DUGK/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Short Form Video 4</h3>
+        </div>
+        <div class="video-item short-form">
+            <iframe src="https://drive.google.com/file/d/1msKoIXieXecn73Ggov7-K5Ncg-E_ZyVJ/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Short Form Video 5</h3>
+        </div>
+
+        <div class="video-item long-form">
+            <iframe src="https://drive.google.com/file/d/12MfFG1fLFB_CvPKFO6gnPI4DjPAua4Dr/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Long Form Video 1</h3>
+        </div>
+        <div class="video-item long-form">
+            <iframe src="https://drive.google.com/file/d/1fi_X2WKhl6-qbfXlQT7YtbOaUYAMcV7v/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Long Form Video 2</h3>
+        </div>
+        <div class="video-item long-form">
+            <iframe src="https://drive.google.com/file/d/1gUIJWzf8vRuWZqXuNnxqjK_x7oaFYNdP/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Long Form Video 3</h3>
+        </div>
+        <div class="video-item long-form">
+            <iframe src="https://drive.google.com/file/d/1QKFn-iT0_bB9EXXSCMqDQ5kxFCbK3VEg/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Long Form Video 4</h3>
+        </div>
+
+        <div class="video-item gaming">
+            <iframe src="https://drive.google.com/file/d/13YxW_9aOEQVwZckVR8LZRPK6xAWsxUYe/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Gaming Video 1</h3>
+        </div>
+
+        <div class="video-item football">
+            <iframe src="https://drive.google.com/file/d/1LeB1BTVDXUlNPAztEoX7vUFHLITPE8Wy/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Football Edit 1</h3>
+        </div>
+        <div class="video-item football">
+            <iframe src="https://drive.google.com/file/d/1LlPn6ACK4uc7RIHHxC617MbpWg3WPwdK/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Football Edit 2</h3>
+        </div>
+
+        <div class="video-item ecommerce">
+            <iframe src="https://drive.google.com/file/d/1KWDEYFB7kpZrsBBNmM1SC_GL9GtjbRX6/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>eCommerce Ad 1</h3>
+        </div>
+        <div class="video-item ecommerce">
+            <iframe src="https://drive.google.com/file/d/19pGELOcPCiRE9MvFSgVGW0uU2kqoX1C-/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>eCommerce Ad 2</h3>
+        </div>
+        <div class="video-item ecommerce">
+            <iframe src="https://drive.google.com/file/d/1WvF0RNkmXyJDmDYicLShM1EJ_hrAvQ0m/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>eCommerce Ad 3</h3>
+        </div>
+
+        <div class="video-item documentary">
+            <iframe src="https://drive.google.com/file/d/1Us9oO28sjfLtelPR5ZZ_GL9KlhESFeD6/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Documentary Style 1</h3>
+        </div>
+        <div class="video-item documentary">
+            <iframe src="https://drive.google.com/file/d/1LMBXgn8gw0LD2LjsPmCR_pQXCacfZAV9/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Documentary Style 2</h3>
+        </div>
+        <div class="video-item documentary">
+            <iframe src="https://drive.google.com/file/d/1VKakYuT5RbpBcYOVIqp_KXwPzZGtK6fv/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Documentary Style 3</h3>
+        </div>
+
+        <div class="video-item color-grading">
+            <iframe src="https://drive.google.com/file/d/1Z44prGPhxNrI-EAnlAIjYPBaCcKsl-70/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Color Grading 1</h3>
+        </div>
+
+        <div class="video-item anime long form">
+            <iframe src="https://drive.google.com/file/d/12DKvqdCPlauiWfQxAFlfANfOa19iT4Cn/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Anime Long Form Video 1</h3>
+        </div>
+        <div class="video-item anime long form">
+            <iframe src="https://drive.google.com/file/d/1ULDUrM-j-fx40g7HgA6nggZPvCIbdR2_/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Anime Long Form Video 2</h3>
+        </div>
+        <div class="video-item anime long form">
+            <iframe src="https://drive.google.com/file/d/1phDRwovujmjm77B6vT0NnVfvX9Fb8EM2/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Anime Long Form Video 3</h3>
+        </div>
+        <div class="video-item anime long form">
+            <iframe src="https://drive.google.com/file/d/1DlDYiUlyCRQyBl-neNiCIV3szQnC-HtO/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Anime Long Form Video 4</h3>
+        </div>
+
+        <div class="video-item ads">
+            <iframe src="https://drive.google.com/file/d/1UeL5PBnsxFE0sCouQjCwQ_zd4WVygHye/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Ad Video 1</h3>
+        </div>
+        <div class="video-item ads">
+            <iframe src="https://drive.google.com/file/d/1jlj2REncMmiYNLGY1KUby7OCtIkkiqH8/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Ad Video 2</h3>
+        </div>
+        <div class="video-item ads">
+            <iframe src="https://drive.google.com/file/d/1J56RJ4AZaT7PpqsSmj6JZH1vhSkeH60r/preview" width="640" height="480" allow="autoplay"></iframe>
+            <h3>Ad Video 3</h3>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Editkaro.in | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
