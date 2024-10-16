@@ -113,6 +113,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: opacity 0.5s ease; /* Smooth fade-out effect */
 }
 
 .spinner {
@@ -136,9 +137,20 @@ footer {
 }
 
 /* Ensure content is hidden when loading */
+/* When loading, hide content by reducing opacity for a fade-out effect */
 body.loading #video-gallery,
 body.loading header,
 body.loading footer {
-    visibility: hidden;
+    opacity: 0; /* Fade out the content */
+    transition: opacity 0.5s ease-in-out;
 }
+
+/* When the body is no longer loading, fade the content back in */
+body:not(.loading) #video-gallery,
+body:not(.loading) header,
+body:not(.loading) footer {
+    opacity: 1; /* Fade in the content */
+    transition: opacity 0.5s ease-in-out;
+}
+
 
