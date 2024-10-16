@@ -17,3 +17,15 @@ function filterVideos(category) {
         }
     });
 }
+// Add a loading class to the body when the page is loading
+document.body.classList.add('loading');
+
+// Wait until the page has fully loaded
+window.addEventListener('load', function() {
+    // Hide the loading screen after the content is fully loaded
+    const loadingScreen = document.getElementById('loading-screen');
+    loadingScreen.style.display = 'none';
+
+    // Remove the loading class to show the content
+    document.body.classList.remove('loading');
+});
